@@ -1,8 +1,8 @@
 {
     "name":"My Progressive web app",
     "short_name":"My PWA",
-    "start_url":"/",
-    "id":"/",
+    "start_url":"/TodoList-Pwa/",
+    "id":"/TodoList-Pwa/",
     "description":"My App",
     "display":"standalone",
     "icons": [
