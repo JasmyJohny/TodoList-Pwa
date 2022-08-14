@@ -1,0 +1,765 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 100%/1.6 "roboto", san-serif;
+    font-size: 1.3em;
+    }
+    
+    .nav-container {
+      display: block;
+      flex-direction: row;
+     
+      align-items: center;
+    }
+    
+    #mainHead {
+      font-family: "Pacifico", cursive;
+      color: #292b75;
+      font-size: 2.5em;
+      text-align: center;
+    }
+    
+    .top-nav {
+      width: 100%;
+      height: 20%;
+      
+    }
+    
+    .nav-container ul {
+      padding: 0;
+    }
+    
+    .nav-container li {
+      list-style: none;
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .nav-container a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color:#ffff00;
+      padding: 10px;
+      font-weight: bold;
+      opacity: 0.5;
+      transition: opacity 5s;
+    }
+    .nav-container a:hover {
+      color: white;
+    }
+  form{
+    align-items: flex-start;
+    border: 2px solid black;
+    margin: 10px 40px;
+    padding: 2%
+  }
+  .header {
+    background-color: #0c0b0b;
+   padding: 5px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #agreeBtnMessage{
+    margin: 2px;
+    border-color: #00cc33;
+    color: #00cc33;
+    margin-left: 40px;
+  }
+  #agreeBtnMessage p{
+   
+    color: #00cc33;
+    padding: 10px;
+    font-weight: bold;
+  } 
+  .required:after {
+    content: " *";
+    color: red;
+  }
+  #disagreeBtnMessage {
+    border-color: #c00;
+    color: #c00;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+  #game-add-failed {
+    border-color: #c00;
+    color: #c00;
+    margin-left: 40px;
+  }
+  #notificationForm
+  {
+    align-items: flex-start;
+    border: 2px solid black;
+    margin: 10px 40px;
+    padding: 2%
+  }
+  [type="submit"] {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    width: 10%;
+    /* background: #cc6666; */
+    background: cornflowerblue;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    margin-left: 35px;
+   align-items:flex-end;
+    
+  }
+  #show
+  {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    width: 90px;
+    /* background: #cc6666; */
+    background: cornflowerblue;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    margin-left: 55px;
+   align-items:flex-end;
+  }
+  /* filter */
+  .game-filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .game-filter label {
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+  }
+  
+  .game-filter select {
+    width: 200px;
+    font-size: 19px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+  }
+  
+  .game-filter  button {
+    font-size: 19px;
+    width: 120px;
+    height: 40px;
+    margin: 0 0 0 10px;
+  }
+  
+  /* Items */
+  .game-item {
+    background-color: #fff;
+    padding: 15px;
+    border: solid 1px #aaa;
+    margin-top: 10px;
+  }
+  
+  .game-item span {
+    color: #777;
+    font-size: 19px;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+  
+  .game-item h3 {
+    color: #008080;
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .game-item div {
+    color: #333;
+    font-size: 19px;
+    margin: 10px 0;
+  }
+  
+  .game-item div b {
+    font-size: 17px;
+  }
+  
+  /* Button */
+  .game-item button {
+    display: inline-block;
+    font-size: 17px;
+    width: 160px;
+    height: 40px;
+    margin: 0 10px 0 0;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; 
+    display: block;/* Could be more or less, depending on screen size */
+  }
+  
+  #notificationHeader{
+    text-align: center;
+  }
+  #pushBtn
+  {
+    margin-left: 40px;
+    height: 40px;
+    background-color: cornflowerblue;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+  }
+  header,
+  footer,
+  nav,
+  main,
+  section {
+    display: block;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font: 100%/1.6 "roboto", san-serif;
+    font-size: 1.3em;
+  }
+  
+  
+  
+  
+  
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+  }
+  
+  #mainHead {
+    font-family: "Pacifico", cursive;
+    color: #292b75;
+    font-size: 2.5em;
+  }
+  
+  .top-nav {
+    width: 65%;
+  }
+  
+  .nav-container ul {
+    padding: 0;
+  }
+  
+  .nav-container li {
+    list-style: none;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .nav-container a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffff00;
+    padding: 10px;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: opacity 5s;
+  }
+  .nav-container a:hover {
+    color: #38c4c1;
+  }
+  .hero {
+    background: 
+      url("../Images/TodoappHome.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 0;
+    color: #292b75;
+    align-items: flex-end;
+    width: 100%;
+    text-shadow: 0 2px 4px #b0c0cf;
+    text-align: end;
+  }
+  .hero h4 {
+    margin: 0;
+    width: 100%;
+    word-wrap: break-word;
+    color: white;
+    text-align: center;
+    font-family: "Anek Odia", sans-serif;
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+   
+    margin-right: 450px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 25px;
+    align-items: center;
+  }
+  
+  .button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #fe7ec9;
+  }
+  
+  .button1:hover {
+    background-color: #fe7ec9;
+    color: white;
+  }
+  .hero h2 {
+    font-family: "Open Sans", serif;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+  }
+  
+  .banner__description {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  section {
+    padding: 5% 15%;
+  }
+  
+  #welcomeSection {
+    background-color: white;
+  }
+  #welcomeSection hr {
+    width: 100px;
+    height: 5px;
+    background-color: #000;
+  }
+  
+  #welcomeSection h2 {
+    
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: #031633;
+  }
+  #welcomeSection p {
+    text-align: justify;
+  }
+  #servicesSection {
+    background-color: white;
+    padding: 0;
+  }
+  #services-container {
+    padding: 0;
+  }
+  .servicesBlock1 {
+    align-items: center;
+    padding: 2%;
+    background-color: #38c4c1;
+    color: white;
+    text-align: center;
+  }
+  .bottom-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .servicesBlock2 {
+    padding: 2%;
+    background-color: #feca02;
+    color: white;
+    text-align: center;
+  }
+  
+  .servicesBlock3 {
+    padding: 2%;
+    background-color: #fe7ec9;
+    color: white;
+    text-align: center;
+  }
+  .servicesBlock4 {
+    padding: 2%;
+    background-color: #488df4;
+    color: white;
+    text-align: center;
+  }
+  
+  #services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #facilitySection {
+    background-color: #38c4c1;
+    padding: 5%;
+  }
+  #facility-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 75px;
+  }
+  .facilitySectionBlock1 {
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  #facilitySectionHead {
+    font-size: 22px;
+    text-align: justify;
+    padding: 5%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    align-items: center;
+  }
+  #facilitySection h2 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 37px;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  #facilitySection h3 {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    align-items: center;
+    font-family: "Anek Odia", sans-serif;
+  }
+  #keyFeatureSection {
+    background-color: #feca02;
+  }
+  #keyFeatureSection h2 {
+    color: white;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 0s;
+  }
+  #keyFeature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .keyFeatureSectionBlock1 {
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 10px;
+    width: 80%;
+    padding: 2%;
+    align-items: center;
+  }
+  .keyFeatureSectionBlock1 p {
+    text-align: justify;
+    align-items: center;
+  }
+  
+  #enrollSection {
+    background-color: whitesmoke;
+  }
+  #enrollSection h2 {
+    color: black;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 0s;
+  }
+  #enroll-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .enrollSectionBlock1 {
+    color: black;
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    margin: 10px;
+    padding: 2%;
+  }
+  
+  .phonecircle-icon {
+    background: #fe7ec9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    margin-left: 25px;
+  }
+  .mailcircle-icon {
+    background: #feca02;
+    width: 40px;
+    margin-left: 80px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    text-align: center;
+  }
+  .locationcircle-icon {
+    background: #38c4c1;
+    width: 40px;
+    margin-left: 100px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 20px;
+    color: white;
+  }
+  .bottom-text h4 {
+    text-align: start;
+  }
+  h4{
+      text-align: center;
+  }
+  #bottom {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 10%;
+  }
+  
+  .bottom-text {
+    margin-right: 5%;
+    padding: 2%;
+  }
+  
+  footer {
+    background-color: #161848;
+    color: #fff;
+    padding: 10px 50px;
+  }
+  label {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .required {
+    color: red;
+  }
+  form {
+    max-width: 420px;
+    margin: 50px auto;
+  }
+  
+  .feedback-input {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: white;
+    border: 2px solid #cc6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+  }
+  
+  .feedback-input:focus {
+    border: 2px solid #cc4949;
+  }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+  }
+  
+  [type="submit"] {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #cc6666;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+  }
+  [type="submit"]:hover {
+    background: #cc4949;
+  }
+  #form_container {
+    padding: 15px 15px;
+    margin-top: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
+  .contactUsMainSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../Images/IceCream6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .contactUsSection p {
+    text-align: center;
+    color: white;
+    font-family: "Anek Odia", sans-serif;
+  }
+  .contactUsSection h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .nav-container {
+      flex-direction: column;
+    }
+    .top-nav {
+      width: 100%;
+      text-align: center;
+    }
+    .nav-container li {
+      display: inline;
+      margin: 0 2%;
+      border: none;
+    }
+    .nav-container li:hover {
+      border-bottom: 2px solid #292b75;
+    }
+    .hero {
+      justify-content: flex-start;
+    }
+    .hero h1 {
+      text-align: right;
+    }
+    .hero h1 {
+      text-transform: uppercase;
+      font-size: 2em;
+      margin: 0;
+      color: #f6f6f8;
+      align-items: right;
+      width: 100%;
+      text-shadow: 0 2px 4px #b0c0cf;
+      text-align: right;
+    }
+    #services-container {
+      flex-direction: row;
+    }
+    #facility-container {
+      flex-direction: row;
+    }
+    #keyFeature-container {
+      flex-direction: row;
+    }
+    #enroll-container {
+      flex-direction: row;
+    }
+    .servicesBlock {
+      width: 30%;
+      margin: 0 5%;
+    }
+    .bottom-text {
+      width: 50%;
+    }
+    .bottom-container {
+      flex-direction: row;
+    }
+    .locationcircle-icon {
+      margin-left: 25px;
+    }
+    .keyFeatureSectionBlock1 {
+      width: 300px;
+    }
+  }
+  
+  @media screen and (min-width: 1300px) {
+    .nav-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .top-nav {
+      width: 70%;
+    }
+  }
+  
+    @media screen and (min-width: 1000px) {
+      .nav-container {
+        flex-direction: row;
+      }
+      .top-nav {
+        width: 100%;
+        text-align: center;
+      }
+      .nav-container li {
+        display: inline;
+        margin: 0 2%;
+        border: none;
+      }
+      .nav-container li:hover {
+        border-bottom: 2px solid #292b75;
+      }
+      
+     
+    }
+    
+    @media screen and (min-width: 1300px) {
+      .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .top-nav {
+        width: 100%;
+      }
+    }
+    
