@@ -1,0 +1,281 @@
+/* Fields */
+#game-add-form .field {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  #game-add-form .field label {
+    display: block;
+    width: 100px;
+    line-height: 30px;
+  }
+  
+  #game-add-form .field input,
+  #game-add-form .field select {
+    width: 230px;
+    font-size: 19px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Checkbox */
+  #game-add-form .checkbox {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  #game-add-form .checkbox label {
+    display: block;
+    line-height: 20px;
+  }
+  
+  #game-add-form .checkbox input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 100px;
+  }
+  
+  /* Button */
+  #game-add-form button {
+    font-size: 19px;
+    width: 120px;
+    height: 40px;
+    margin: 0 10px 0 100px;
+  }
+  
+  /* Messages */
+  #game-add-success,
+  #game-add-failed {
+    display: none;
+    background-color: #fff;
+    border: solid 4px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
+  #game-add-success {
+    border-color: rgb(20, 201, 192);
+    color: #0c0;
+  }
+  
+  #game-add-failed {
+    border-color: rgb(231, 45, 45);
+    color: #c00;
+  }
+  #locationbtn{
+    border-color: #cc6666;
+    color: #292b75;
+    background-color: aliceblue;
+  }
+  #game-add-failed div {
+    color: #777;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font: 100%/1.6 "roboto", san-serif;
+    font-size: 1.3em;
+  }
+  
+  .nav-container {
+    display: block;
+    flex-direction: column;
+  
+    align-items: center;
+  }
+  
+  #mainHead {
+    font-family: "Pacifico", cursive;
+    color: #292b75;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  
+  .top-nav {
+    width: 100%;
+   
+  }
+  
+  .nav-container ul {
+    padding: 0;
+  }
+  
+  .nav-container li {
+    list-style: none;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .nav-container a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffff00;
+    padding: 10px;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: opacity 5s;
+  }
+  .nav-container a:hover {
+    color: white;
+  }
+  form {
+    border: 2px solid black;
+    margin: 10px 40px;
+    padding: 2%;
+  }
+  [type="submit"] {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    width: 25%;
+    background: #cc6666;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    align-items: flex-end;
+  }
+  /* filter */
+  .game-filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .game-filter label {
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+  }
+  
+  .game-filter select {
+    width: 200px;
+    font-size: 19px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+  }
+  
+  .game-filter button {
+    font-size: 19px;
+    width: 120px;
+    height: 40px;
+    margin: 0 0 0 10px;
+  }
+  
+  /* Items */
+  .game-item {
+    background-color: #fff;
+    padding: 15px;
+    border: solid 1px #aaa;
+    margin-top: 10px;
+  }
+  
+  .game-item span {
+    color: #777;
+    font-size: 19px;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+  
+  .game-item h3 {
+    color: #008080;
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .game-item div {
+    color: #333;
+    font-size: 19px;
+    margin: 10px 0;
+  }
+  
+  .game-item div b {
+    font-size: 17px;
+  }
+  
+  /* Button */
+  .game-item button {
+    display: inline-block;
+    font-size: 17px;
+    width: 160px;
+    height: 40px;
+    margin: 0 10px 0 0;
+  }
+  form {
+    border: 2px solid black;
+    margin: 10px 40px;
+    padding: 2%;
+  }
+  .required:after {
+    content: " *";
+    color: red;
+  }
+  .header {
+    background-color: #0c0b0b;
+    padding: 5px;
+    color: white;
+    text-align: center;
+  }
+  #add-task-btn {
+   margin-left: 280px;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    background-color: #c08311;
+    border-color: black;
+    color: white;
+  }
+  @media screen and (min-width: 1000px) {
+    .nav-container {
+      flex-direction: row;
+    }
+    .top-nav {
+      width: 100%;
+      text-align: center;
+    }
+    .nav-container li {
+      display: inline;
+      margin: 0 2%;
+      border: none;
+    }
+    .nav-container li:hover {
+      border-bottom: 2px solid #292b75;
+    }
+  
+    .content {
+      margin: 5px 25px;
+    }
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    align-items: stretch;
+    text-align: start;
+    margin: 0 auto;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  @media screen and (min-width: 1300px) {
+    .nav-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .top-nav {
+      width: 100%;
+    }
+  }
+  

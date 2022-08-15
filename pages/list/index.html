@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <title>Todo App</title>
+    <link rel="manifest" href="../../manifest.json" />
+    <link rel="stylesheet" href="../list/style.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body >
+    <div id="myDIV" class="header">
+      <h2>My To Do List</h2>
+      <div class="nav-container">
+     
+    
+        <nav class="top-nav">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../add/index.html">Add</a></li>
+            <li><a href="../list/index.html">List</a></li>
+            <li><a href="../contactus/index.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+    <main>
+      <div class="content" >
+        <h2>Tasks to be done</h2>
+
+        <div class="game-filter" >
+          <button id="listitemBtn">Tasks</button>
+        </div>
+
+        <div id="output"></div>
+      
+        <!-- <div class="game-item"></div> -->
+      </div>
+   
+    </main>
+    <!-- <script src="../../js/game-db.js"></script> -->
+    <script src="../list/script.js" type="module"></script>
+  </body>
+</html>

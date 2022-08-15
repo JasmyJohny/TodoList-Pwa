@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <title>Todo App</title>
+    <link rel="manifest" href="../../manifest.json" />
+    <link rel="stylesheet" href="../add/style.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+      <h2>My To Do List</h2>
+      <div class="nav-container">
+     
+    
+        <nav class="top-nav">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../add/index.html">Add</a></li>
+            <li><a href="../list/index.html">List</a></li>
+            <li><a href="../add/index.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  
+    <main>
+      <div class="card">
+        <img src="../../Images/todo.jpg" alt="Avatar" style="width:70%; align-items: center;">
+      <div class="content">
+        <h2>New Task</h2>
+        <div id="game-add-form">
+          <div class="field">
+            <label for="task" class="required">Task:</label>
+            <input id="task" type="text" maxlength="50" required />
+          </div>
+
+          <div class="field">
+            <label for="datetime" class="required">Date:</label>
+            <input id="datetime" type="datetime-local"  required />
+          </div>
+          <label style="font-size: 13px;">(Either click get location or type your location)</label>
+          <div class="field">
+            <label for="location" >Location:</label>
+            <input id="location" type="text"/>
+            <button id="locationbtn">Get location</button>
+          </div>
+          <h5 id="mandatoryField" style="display: none">
+            Please Fill required fields
+          </h5>
+
+          <button id="add-task-btn">Add</button>
+        </div>
+
+        <!-- Success Message -->
+        <div id="game-add-success">Task added successfully!</div>
+
+        <!-- Failure Message -->
+        <div id="game-add-failed">Failed to add Task!</div>
+      </div>
+      </div>
+
+    </main>
+    <!-- <script src="../../js/game-db.js"></script> -->
+    <script src="../add/script.js" type="module"></script>
+  </body>
+</html>

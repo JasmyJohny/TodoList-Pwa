@@ -10,26 +10,21 @@ if ("serviceWorker" in navigator) {
   } else {
     console.log("Service worker is not supported");
   }
+
+
+  
   if ('fullscreenElement' in document && 'exitFullscreen' in document && document.fullscreenEnabled) {
-  
+    console.log("full screen enabled")
+    
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(err => {
+        alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+      });
+    } else if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
    
-      if (!document.fullscreenElement) {
-  
-       
-        document.documentElement.requestFullscreen()
-          .then(() => {
-            //message.innerText = 'You are on fullscreen mode now.'
-          });
-      }
-      else {
-  
-       
-        document.exitFullscreen()
-          .then(() => {
-           // message.innerText = 'You left the fullscreen mode.'
-          });
-      }
-  
+     
   }
   else {
     //output.innerText = 'Fullscreen not available or enabled on this device.';

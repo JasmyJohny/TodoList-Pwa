@@ -1,29 +1,32 @@
-const cacheAssets = "version8";
+const cacheAssets = "version1";
 self.addEventListener("install", function (event) {
   console.log("Service worker installed:", event);
-//   self.skipWaiting();
+  self.skipWaiting();
 
-//   console.log("caches", caches);
-//   event.waitUntil(
-//     caches.open(cacheAssets).then(function (cache) {
-//       cache.addAll([
-//         "/Hotel-App/",
-//         "/Hotel-App/index.html",
-//         "/Hotel-App/images/todo.jpg",
-//         "/Hotel-App/images/TodoappHome.jpg",
-//         "/Hotel-App/css/style.css",
-//         "/Hotel-App/js/site.js",
-//         "/Hotel-App/todo-db.js",
-//         "/Hotel-App/pages/add/index.html",
-//         "/Hotel-App/pages/add/script.js",
-//         "/Hotel-App/pages/add/style.css",
-//         "/Hotel-App/pages/list/index.html",
-//         "/Hotel-App/pages/list/script.js",
-//         "/Hotel-App/pages/list/style.css",
-       
-//       ]);
-//     })
-//   );
+  //console.log("caches", caches);
+  event.waitUntil(
+    caches.open(cacheAssets).then(function (cache) {
+      console.log("entered ")
+      cache.addAll([
+        "/TodoList-Pwa/",
+        "/TodoList-Pwa/index.html",
+        "/TodoList-Pwa/images/todo.jpg",
+        "/TodoList-Pwa/images/TodoappHome.jpg",
+        "/TodoList-Pwa/css/style.css",
+        "/TodoList-Pwa/js/site.js",
+        "/TodoList-Pwa/todo-db.js",
+        "/TodoList-Pwa/pages/add/index.html",
+        "/TodoList-Pwa/pages/add/script.js",
+        "/TodoList-Pwa/pages/add/style.css",
+        "/TodoList-Pwa/pages/list/index.html",
+        "/TodoList-Pwa/pages/list/script.js",
+        "/TodoList-Pwa/pages/list/style.css",
+        "/TodoList-Pwa/pages/contactus/index.html",
+        "/TodoList-Pwa/pages/contactus/style.css",
+        "/TodoList-Pwa/pages/contactus/script.js",
+      ]);
+    })
+  );
 });
 
 self.addEventListener("activate", function (event) {
@@ -43,10 +46,30 @@ self.addEventListener("activate", function (event) {
 
 self.addEventListener("fetch", function (event) {
   event.respondWith(
-    caches.match(event.request).then(function (response) {
-      return response || fetch(event.request);
+    caches.open(cacheAssets).then(function (cache) {
+      return cache.match(event.request).then(function (cachedResponse) {
+        const fetchedResponse = fetch(event.request).then(function (
+          networkResponse
+        ) {
+          if(event.request.method === 'GET')
+          {
+          
+          
+          cache.put(event.request, networkResponse.clone());
+          }
+          return networkResponse;
+        
+        });
+        return cachedResponse || fetchedResponse;
+      });
     })
   );
+  // event.respondWith(
+  //   caches.match(event.request).then(function (response) {
+  //     if(event.request.method === 'GET')
+  //     return response || fetch(event.request);
+  //   })
+  // );
 });
 
 self.addEventListener("notificationclick", (event) => {
@@ -72,4 +95,11 @@ self.addEventListener("push", (event) => {
   const data = event.data.json();
   console.log("Push data", data);
   event.waitUntil(self.registration.showNotification(data.title));
+});
+
+self.addEventListener("sync", (event) => {
+  console.log("[sw] bg sync:", event.tag);
+  if (event.tag === "my-tag-name") {
+    console.log("do what?");
+  }
 });

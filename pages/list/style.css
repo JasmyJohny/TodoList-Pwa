@@ -1,0 +1,352 @@
+/* filter */
+.game-filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .game-filter label {
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+  }
+  
+  .game-filter select {
+    width: 200px;
+    font-size: 19px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+  }
+  
+  .game-filter button {
+    font-size: 19px;
+    width: 120px;
+    height: 40px;
+    margin: 0 0 0 10px;
+  }
+  
+  /* Items */
+  .game-item {
+    background-color: rgb(54, 178, 216);
+    padding: 27px;
+    border: solid 1px rgb(172, 32, 32);
+    margin-top: 10px;
+  }
+  #date{
+    color: #292b75;
+    font-size: 16px;
+  }
+  #heading{
+    color: #030e0e;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  #subheading{
+    margin-top: 5px;
+    color: #030e0e;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  #taskname{
+    color: #008080;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .game-item span {
+    color: #777;
+    font-size: 19px;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+  
+  .game-item h3 {
+    color: #008080;
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .game-item div {
+    color: #333;
+    font-size: 19px;
+    margin: 10px 0;
+  }
+  
+  .game-item div b {
+    font-size: 17px;
+  }
+  
+  /* Button */
+   .game-item button {
+    display: block;
+    font-size: 17px;
+    width: 160px;
+    height: 40px;
+ padding: 0;
+    text-align: end; align-items: flex-end; 
+    justify-content: flex-end;
+    float: right;
+  } 
+   
+  body {
+    margin: 0;
+    padding: 0;
+    font: 100%/1.6 "roboto", san-serif;
+    font-size: 1.3em;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    display: block;
+    align-items: center;
+  }
+  
+  #mainHead {
+    font-family: "Pacifico", cursive;
+    color: #292b75;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  
+  .top-nav {
+    width: 100%;
+   
+  }
+  
+  .nav-container ul {
+    padding: 0;
+  }
+  
+  .nav-container li {
+    list-style: none;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .nav-container a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffff00;
+    padding: 10px;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: opacity 5s;
+  }
+  .nav-container a:hover {
+    color: white;
+  }
+  form {
+    border: 2px solid black;
+    margin: 10px 40px;
+    padding: 2%;
+  }
+  [type="submit"] {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    width: 25%;
+    background: #cc6666;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    align-items: flex-end;
+  }
+  /* filter */
+  .game-filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .game-filter label {
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+  }
+  
+  .game-filter select {
+    width: 200px;
+    font-size: 19px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+  }
+  
+  .game-filter button {
+    font-size: 19px;
+    width: 120px;
+    height: 40px;
+    margin: 0 0 0 10px;
+  }
+  
+  /* Items */
+  .game-item {
+    background-color: #ffffe0;
+    padding: 27px;
+    border: solid 1px rgb(10, 0, 0);
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .game-item span {
+    color: rgb(3, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .game-item h3 {
+    color: #2f3838;
+    font-size: 26px;
+    margin: 0;
+    font-weight: normal;
+    padding: 0;
+  }
+  
+  .game-item div {
+    color: #333;
+    font-size: 19px;
+    margin: 10px 0;
+  
+    flex-direction: row;
+  }
+  
+  .game-item div b {
+    font-size: 24px;
+  }
+  
+  /* Button */
+  .game-item button {
+    display: inline-block;
+    font-size: 17px;
+    width: 160px;
+    height: 40px;
+    margin: 0 10px 0 0;
+  }
+  .content h2 {
+    text-align: center;
+  }
+  
+   /* ul {
+    list-style: none;
+    color: #e0e0e0;
+    padding: 0;
+  }
+  
+   ul li {
+    padding: 10px;
+    background-color: #262e4c;
+    border-bottom: 1px solid #3a4674;
+  }
+  
+  .check {
+    width: 0.8em;
+    height: 0.8em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-appearance: none;
+  }
+  
+  .check:checked {
+    background-color: #1dd2af;
+  }
+  
+  .task {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  
+  .task:focus {
+    outline: none;
+  }
+  
+   ul li i {
+    float: right;
+    cursor: pointer;
+  }
+  
+   ul li i:hover {
+    color: rgb(255, 82, 82);
+  }
+  .complete {
+    color: rgba(192, 192, 192, 0.8);
+    text-decoration: line-through;
+  } */
+  
+  .header {
+    background-color: #0c0b0b;
+    padding:5px;
+    color: white;
+    text-align: center;
+  }
+  #tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+  }
+  
+  .task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+  }
+  .task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .task button{
+    background-color: #0a2ea4;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+  }
+  @media screen and (min-width: 1000px) {
+    .nav-container {
+      flex-direction: row;
+    }
+    .top-nav {
+      width: 100%;
+      text-align: center;
+    }
+    .nav-container li {
+      display: inline;
+      margin: 0 2%;
+      border: none;
+    }
+    .nav-container li:hover {
+      border-bottom: 2px solid #292b75;
+    }
+  }
+  
+  @media screen and (min-width: 1300px) {
+    .nav-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .top-nav {
+      width: 100%;
+    }
+  }
+  
